@@ -1,0 +1,20 @@
+body {
+  margin: auto;
+  background-color: #eaeaea;
+  display: grid;
+  place-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+  padding: 3px;
+}
+
+.deleteButton {
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
+  padding: 5px;
+  background-color: rgb(154, 33, 33);
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+}
