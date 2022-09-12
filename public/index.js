@@ -17,7 +17,7 @@ function handleClicks() {
 
 function deleteNote(node) {
   let id = node.getAttribute('data-id');
-  fetch(`http://localhost:3000/note/${id}`, {
+  fetch(`http://notesapi.willyennie.com/note/${id}`, {
     method: 'DELETE',
   })
   .then(response => {
@@ -28,7 +28,7 @@ function deleteNote(node) {
 }
 
 function addNewNote(newNoteContent) {
-  fetch('http://localhost:3000/note', {
+  fetch("http://notesapi.willyennie.com/note", {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -47,7 +47,7 @@ function addNewNote(newNoteContent) {
 function renderNotes() {
   let list = document.getElementById('notes');
 
-  fetch('http://localhost:3000/notes', {
+  fetch("http://notesapi.willyennie.com/notes", {
     method: "GET",
     headers: {
       'Content-Type': 'application/json',
